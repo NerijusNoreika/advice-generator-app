@@ -1,0 +1,95 @@
+/*****************************************************
+                         VARS 
+*****************************************************/
+
+$defaultFont: 'Manrope', sans-serif;
+
+
+$primaryLightCyan: hsl(193, 38%, 86%);
+$primaryNeonGreen: hsl(150, 100%, 66%);
+
+
+$neutralGrayishBlue: hsl(217, 19%, 38%);
+$neutralDarkGrayishBlue: hsl(217, 19%, 24%);
+
+$quotesFontSize: 28px;
+$defaultWeight: 800;
+
+/*****************************************************
+                         RESETS
+*****************************************************/
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+html {
+    height: 100%;
+}
+body {
+    margin: 0;
+    min-height: 100%;
+    background: #202632;
+    display: grid;
+    place-items: center;
+    line-height: 1.5;
+    font-family: $defaultFont;
+
+}
+
+
+.container {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    background: #313a49;
+    text-align: center;
+    padding: 3rem 2rem;
+    border-radius: 10px;
+    position: relative;
+    max-width: 600px;
+    width: 95%;
+    box-shadow: 
+        30px 50px 0px 0px hsla(220, 24%, 15%, 0.7),
+        15px 30px 0 70px hsl(220, 23%, 15%, 0.4);
+    h1 {
+        text-transform: uppercase;
+        color: $primaryNeonGreen;
+        font-size: .7rem;
+        span {
+            letter-spacing: 3px;
+        }
+    }
+
+    &__dice {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: -28px;
+        background: #54ffab;
+        padding: .8rem;
+        border-radius: 50%;
+        &:hover {
+            cursor: pointer;
+            box-shadow: 0px 0px 30px 0px #54ffab;
+            
+        }
+
+    }
+    &__seperator {
+        margin-bottom: 1rem;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        max-inline-size: 100%;
+    }
+
+    h2 {
+        color: $primaryLightCyan;
+        font-size: $quotesFontSize;
+    }
+}
+
+
+
+
