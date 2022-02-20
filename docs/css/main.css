@@ -49,13 +49,18 @@ body {
   left: 50%;
   transform: translateX(-50%);
   bottom: -28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: #54ffab;
   padding: 0.8rem;
   border-radius: 50%;
+  transition: box-shadow ease-in-out 0.3s;
 }
 .container__dice:hover {
   cursor: pointer;
   box-shadow: 0px 0px 30px 0px #54ffab;
+  transition: box-shadow ease-in-out 0.3s;
 }
 .container__seperator {
   margin-bottom: 1rem;

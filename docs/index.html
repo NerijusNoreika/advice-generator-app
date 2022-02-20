@@ -18,7 +18,10 @@
       >Advice</span> # {{ adviceId }}</h1>
     <h2>“ {{ advice }} ”</h2>
     <img class="container__seperator" src="./images/pattern-divider-desktop.svg" alt="">
-    <img @click="generateQuote" class="container__dice" src="./images/icon-dice.svg" alt="">
+
+    <div @click="generateQuote" class="container__dice">
+      <img src="./images/icon-dice.svg" alt="">
+    </div>
   </div>
 
   
